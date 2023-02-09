@@ -1,6 +1,6 @@
 FROM alpine:latest
 
-RUN apk add rtpengine curl
+RUN apk add --no-cache bash curl rtpengine
 
 COPY ./entrypoint.sh /entrypoint.sh
 COPY ./rtpengine.conf /etc
